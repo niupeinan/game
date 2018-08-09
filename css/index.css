@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-image: url('../img/qiang.png');
+    background-size: contain;
+    position: relative; */
+}
+.screen{
+    width: 100%;
+    height: 8.1rem;
+    background-image: url('../img/scen.png');
+    background-size:7.5rem 8.1rem;
+    position: relative;
+}
+.screen .letter{
+    width: 0.53rem;
+    height: 0.77rem;
+    position: absolute;
+    top:1.02rem;
+    left:0;
+    background-size: contain;
+    z-index: 10;
+}
+.bottom{
+    width: 100%;
+    height: 5.22rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url('../img/Key.png');
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.bottom .keybox{
+    width: 7rem;
+    height: 4rem;
+    background-color: rgba(14, 109, 241, 0.5);
+    display: flex;
+    flex-wrap:wrap; 
+    align-items: center;
+    justify-content: center;
+}
+.bottom .keybox .btn{
+    width: 0.5rem;
+    height: 0.8rem;
+    background-image: url('../img/Letter.png');
+    background-size: contain;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.8rem;
+    margin:0 0.1rem;
+}
+.bottom .keybox .btn:nth-child(11){
+    margin-left: 0.2rem;
+}
+.cloud{
+    width: 4.95rem;
+    height: 0.56rem;
+    background-image: url('../img/clound_06.png');
+    background-size: contain;
+    position:absolute;
+    top: 0.85rem;
+    left: 0;
+    animation: move 2s infinite linear alternate;
+    z-index: 100;
+}
+@keyframes move{
+    to{
+        transform: translateX(2.55rem);
+    }
+}
+ul{
+    display: block;
+    width: 1.21rem;
+    height: 4.24rem;
+    position:fixed;
+    top: 2.28rem;
+    right: 0.23rem;
+    /* background: red; */
+
+}
+li{
+    width: 1.21rem;
+    height: 1.21rem;
+    margin-bottom:0.14rem;
+}
+.life{
+    background-image: url('../img/生命值.png');
+    background-size:contain; 
+    font-size: 0.6rem;
+    text-align: center;
+
+}
+.jf{
+    background-image: url('../img/积分值.png');
+    background-size:contain; 
+    font-size: 0.6rem;
+    text-align: center;
+}
+.replay{
+    width: 0.98rem;
+    height: 0.98rem;
+    margin:0.4rem auto;
+}
+.start{
+    width: 0.98rem;
+    height: 0.98rem;
+    background-image: url('../img/Pause.png');
+    background-size:contain;;
+}
+.end{
+    width: 0.98rem;
+    height: 0.98rem;
+    background-image: url('../img/play.png');
+    background-size:contain;
+}
+.bgmusic{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: fixed;
+    top:0.23rem;
+    right:0.23rem;
+}
+.astart{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-image: url('../img/Aplay.png');
+    background-size: contain;
+}
+.aend{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-image: url('../img/Apause.png');
+    background-size: contain;
+}
+.death{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.8);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+    display: none;
+}
+
+.death .box{
+    width:4.30rem;
+    height:4.49rem;
+    background-image:url("../img/gameover.png");
+    background-size:contain;
+    margin:1rem auto;
+    position: relative;
+}
+.death .box .text{
+    width:0.8rem;
+    height:0.5rem;
+    position: absolute;
+    left:2rem;
+    top:2.75rem;
+    font-size:0.4rem;
+    text-align: center;
+    line-height: 0.5rem;
+    color:red;
+}
+.death .box .replay{
+    width:2.63rem;
+    height:0.6rem;
+    background-image:url("../img/btn.png");
+    background-size:contain;
+    position: absolute;
+    bottom:0.5rem;
+    left:0;
+    right:0;
+    margin:0 auto;
+}
